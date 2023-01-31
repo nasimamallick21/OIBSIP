@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List Using HTML, CSS & JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>To-Do List</h1>
+    <div class="container">
+        <div class="task-inputs">
+            <img src="bar-icon.jpg" height="25px"  alt="icon">
+            <input type="text" placeholder="Add new task here">
+        </div>
+        <div class="rule">
+            <div class="purify">
+                <span id="all_task" class="differ">All-Task</span>
+                <span id="remaining">Remaining</span>
+                <span id="done">Done</span>
+            </div>
+            <button class="cancel">Delete All</button>
+        </div>
+        <ul class="task-list-container"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
