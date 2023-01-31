@@ -1,0 +1,173 @@
+body {
+    font-family:'Times New Roman', Times, serif;
+}
+
+.timeline {
+    width: 30%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    justify-items: center;
+    align-items: center;
+    overflow-x: hidden;
+    text-align: center;
+    top: 0;
+    left: 0;
+    background-color: white;
+    font-family: "Montserrat", sans-serif;
+    flex-direction: column;
+}
+
+.timeline::after {
+    height: 3800px;
+    content: "";
+    position: absolute;
+    width: 6px;
+    background-color: #00203fff;
+    top: 0;
+    bottom: 0;
+    left: 35px;
+    margin-top: 125px;
+}
+
+
+.container {
+    text-align: left;
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 85%;
+    
+}
+
+.left {
+    left: 10px;
+}
+  
+.right {
+    left: 50%;
+}
+
+.left::after,
+.right::after {
+  left: 15px;
+}
+
+.right::after {
+  left: -16px;
+}
+
+.content {
+  width: 70%;
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+#timeline-header {
+    margin-top: 70px;
+    color: black;
+    letter-spacing: 1.5px;
+    font-weight: 100;
+    font-size: 2.6em;
+  }
+  
+  .main-content {
+    height: 100%;
+    width: 70%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+    right: 0;
+    background: url("flag2.jpg") ;
+    background-repeat: no-repeat;
+    background-size: 130%;
+  }
+  
+.bio {
+    margin-left: 50px;
+    height: 90%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+  
+.info{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 500px;
+}
+#image {
+    max-height: 325px;
+    max-width: 325px;
+    border-radius: 50%;
+    display: block;
+}
+  
+  #title {
+    margin-left: 20px;
+    margin-top: 80x;
+  }
+  
+h1 {
+    font-weight: 400;
+    font-family: "Montserrat";
+    font-size: 48px;
+    color: black;
+}
+  
+#tribute-info {
+    min-width: 50px;
+    max-width: 500px;
+    font-size: 15px;
+    margin-left: 20px;
+    margin-top: 80x;
+    color: white;
+    font-size: 17px;
+}
+  
+#img-caption {
+    min-width: 50px;
+    max-width: 500px;
+    font-size: 15px;
+    text-align: center;
+    color: white;
+}
+  
+#tribute-link {
+    display: block;
+    min-height: 50px;
+    min-width: 180px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #fff;
+    background: #e74c3c;
+    width: 50%;
+    text-align: center;
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    margin-left: 20px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    transition: all 0.2s;
+    box-sizing: border-box;
+}
+  
+.centered-element {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    top: 50%;
+    margin-top: -50px;
+}
+  
+  @media screen and (max-width: 1050px) {
+    #tribute {
+      display: none;
+    }
+  }
